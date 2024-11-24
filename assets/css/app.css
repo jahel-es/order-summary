@@ -1,0 +1,130 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+:root {
+    --body-background: #D6E1FF;
+    --component-color: white;
+    --payment-color: #382AE1;
+    --text-color: #717FA6;
+    --subscription-type-bgc: #F7F9FF;
+}
+
+body {
+    background-color: var(--body-background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-wrapper {
+    background-color: var(--component-color);
+    border-radius: 16px;
+    width: 327px;
+    height: 567px;
+}
+
+header img {
+    width: 100%;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 22px;
+}
+
+.main-description {
+    text-align: center;
+    line-height: 26px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.subscription-container {
+    background-color: var(--subscription-type-bgc);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.subscription-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.subscription-wrapper img {
+    border-radius: 50%;
+    background-color: var(--body-background);
+    padding: 12px;
+    width: 42px;
+}
+
+.subscription-wrapper a {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--payment-color);
+    margin-left: 36px;
+}
+
+.subscription-plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-type, .subscription-price {
+    font-size: 14px;
+}
+
+.subscription-type {
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.subscription-price {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+footer a:first-child {
+    padding: 16px;
+    background-color: var(--payment-color);
+    border-radius: 12px;
+    color: var(--component-color);
+    text-decoration: none;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+footer a:nth-child(2) {
+    padding-top: 24px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 370px) {
+    .component-wrapper {
+        width: 450px;
+        height: 697px;
+    }
+}
